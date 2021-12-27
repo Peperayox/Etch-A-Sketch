@@ -7,13 +7,14 @@ var colorizeOn = true;
 var slider = document.querySelector('#slider'); // it changes therefore var
 var sliderSize = document.querySelector('.slider-size');
 //default color at start
-let color = 'rainbow';
+let color = 'black';
 
 
 function createGrid(gridSize) {
   for (let i = 1 ; i <= gridSize**2 ; i++ ) {
     let gridSquare = document.createElement('div');
     gridContainer.insertAdjacentElement('beforeend',gridSquare);
+    gridSquare.classList.add('borders');
     // ^^ Created gridSize^2 "squares" and inserted them into our gridcontaier//
     // ^^ "beforeend" just tells them to stack em one after the other in th html file// 
     //^^ now we have a big tower of  gridsize^2 divs occuping all lateral space //

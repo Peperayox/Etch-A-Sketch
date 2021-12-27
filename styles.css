@@ -1,28 +1,73 @@
-
+html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+}
 body {
   background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
 }
 .grid-container {
   display: grid;
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
   position: absolute;
-  background-color:white;
+  background-color:rgb(218, 218, 218);
 }
 .hovering {
   background-color: blueviolet;
 }
 .toggle-on {
   background-color: blueviolet;
-  border-color:crimson;
+  border-color:gold;
   border-width: 3px;
 }
-.belga {
-  text-decoration: gold;
-  font-size: 80px;
-  color: blue;
+.borders {
+  border-top: 1px solid rgb(218, 218, 218);
+  border-left: 1px solid rgb(218, 218, 218);
+  background-color: white;
 }
-
+#footer-logo {
+  width: 2em;
+  height: auto;
+  margin-left: 1em;
+}
+#footer-logo:hover {
+  transition-duration: 0.75s;
+  transform: rotate(720deg) scale(1.3);
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 620px;
+  width: 620px;
+  background-color: gold;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+}
+.color-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.h1 {
+  font-style: italic;
+}
 
 
 
